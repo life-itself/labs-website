@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FONTS */
+
+@layer base {
+  h1, h2, h3, h4, h5 {
+    @apply font-extrabold tracking-tight;
+    @apply text-neutral-900;
+  }
+
+  li, p {
+    @apply dark:text-neutral-900/70 dark:marker:text-neutral-900/70 dark:text-lg;
+  }
+
+  a {
+    @apply font-semibold dark:text-neutral-900/70 dark:hover:text-neutral-900;
+    @apply underline dark:underline-offset-2;
+    @apply dark:decoration-2 dark:decoration-neutral-900/70 dark:hover:decoration-neutral-900;
+    @apply ease-in-out duration-300;
+  }
+
+  input, textarea {
+    @apply text-neutral-900 font-medium;
+    @apply bg-neutral-200/70 dark:autofill:!bg-neutral-200/70 shadow-sm;
+    @apply border border-neutral-900;
+    @apply dark:autofill:!caret-neutral-900 dark:autofill:!text-neutral-900;
+  }
+
+  a, input, textarea {
+    @apply focus:outline-0 focus-visible:ring-1 focus-visible:ring-neutral-900;
+  }
+
+  button, .button {
+    @apply relative mt-2 w-full inline-flex items-center justify-center px-12 py-1 sm:w-auto;
+    @apply font-semibold text-slate-200 text-base;
+    @apply dark:bg-neutral-900 dark:hover:bg-neutral-800 dark:disabled:bg-neutral-700;
+    @apply focus-visible:outline focus-visible:outline-offset-4 focus-visible:outline-neutral-900/70;
+    @apply ease-in-out duration-300;
+  }
+
+  /* Footnote styles */
+  a[data-footnote-backref="true"] {
+    @apply dark:bg-neutral-900/70 dark:hover:bg-neutral-900;
+    @apply dark:text-slate-200 dark:hover:text-slate-200 dark:text-xs;
+    @apply dark:font-[icon] dark:font-bold no-underline rounded;
+    @apply pt-[4px] px-[4px] pb-[2px] mx-1;
+  }
+
+  a[data-footnote-ref="true"] {
+    @apply text-xs text-neutral-900/70 px-1;
+  }
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid #171717;
+  -webkit-text-fill-color: #171717;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+  color: #171717;
+}
+
+/* OTHERS */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-mulish text-neutral-900;
+  @apply bg-yellow-400;
+}
+
+#__next {
+  @apply flex flex-col justify-between min-h-screen;
+}
+
+.extra-small {
+  font-size: 0.50rem;
+}
