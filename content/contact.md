@@ -2,9 +2,9 @@
 title: Contact Us
 ---
 
-If you are interested in working with us, or if you have any questions or comments, then please do get in touch via our email:
-_[labs@lifeitself.us](mailto:labs@lifeitself.us)_
+To arrange a chat with us about anything then please just drop us a quick email. We'll usually get back to you in 24 hours or less.
 
-***
+Here's our email 👉 📧
 
-<ContactForm />
+***[hello@lifeitself.org](mailto:hello@lifeitself.org)***
+
